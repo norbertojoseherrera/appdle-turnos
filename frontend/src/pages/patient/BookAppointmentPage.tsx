@@ -68,8 +68,8 @@ export default function BookAppointmentPage() {
   const isWeekday = (date: Date) => date.getDay() !== 0 && date.getDay() !== 6;
 
   return (
-    <div className="max-w-2xl">
-      <h1 className="text-2xl font-bold text-gray-900 mb-2">Reservar turno</h1>
+    <div className="max-w-2xl w-full">
+      <h1 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">Reservar turno</h1>
 
       {/* Indicador de pasos */}
       <div className="flex gap-2 mb-6">
@@ -82,7 +82,7 @@ export default function BookAppointmentPage() {
       {step === 1 && (
         <div>
           <h2 className="text-lg font-semibold mb-4">Elegí una especialidad</h2>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {specialties.map((sp) => (
               <button
                 key={sp.id}

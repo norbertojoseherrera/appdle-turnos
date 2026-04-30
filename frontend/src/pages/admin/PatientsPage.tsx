@@ -33,8 +33,8 @@ export default function PatientsPage() {
   return (
     <div>
       <h1 className="text-2xl font-bold text-gray-900 mb-6">Pacientes</h1>
-      <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
-        <table className="w-full text-sm">
+      <div className="bg-white border border-gray-200 rounded-xl overflow-x-auto">
+        <table className="w-full text-sm min-w-[600px]">
           <thead className="bg-gray-50 border-b border-gray-200">
             <tr>
               <th className="text-left px-4 py-3 font-medium text-gray-600">Nombre</th>
